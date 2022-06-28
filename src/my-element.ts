@@ -302,7 +302,7 @@ export class MyElement extends LitElement {
             From: "transform opacity-100 scale-100"
             To: "transform opacity-0 scale-95"
         -->
-        <div class="${tw`origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`}" 
+        <div class="${tw`origin-top-right fixed right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`}" 
             role="menu"
             ?hidden=${!this.open}
             aria-orientation="vertical" 

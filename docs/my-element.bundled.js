@@ -63,7 +63,7 @@ const X=(t,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,
             From: "transform opacity-100 scale-100"
             To: "transform opacity-0 scale-95"
         -->
-        <div class="${ti`origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`}" 
+        <div class="${ti`origin-top-right fixed right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`}" 
             role="menu"
             ?hidden=${!this.open}
             aria-orientation="vertical" 
@@ -71,10 +71,10 @@ const X=(t,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,
             tabindex="-1">
           <div class="${ti`py-1`}" role="none">
             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-            <button type="button" class="${ti`text-gray-700 block w-full text-right px-4 py-2 text-sm`}" role="menuitem" tabindex="-1" id="name">
+            <button type="button" class="${ti`text-gray-700 block w-full text-right px-4 py-2 text-sm focus:outline-none`}" role="menuitem" tabindex="-1" id="name">
               ${this.user?this.user.name:""}
             </button>
-            <button type="button" class="${ti`text-gray-700 block w-full text-right px-2 py-2 text-sm`}" role="menuitem" tabindex="-1" id="menu-item-3" @click=${this.logout}>
+            <button type="button" class="${ti`text-gray-700 block w-full text-right px-2 py-2 text-sm focus:outline-none`}" role="menuitem" tabindex="-1" id="menu-item-3" @click=${this.logout}>
               Đăng xuất
             </button>
           </div>
